@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Converter</title>
+  </head>
+  <body>
+    <div id="frame">
+      <div id="page">
+        <header>
+          <h1>
+            <div id="logo">Converter</div>
+            <small>Web App</small>
+          </h1>
+        </header>
+        <div class="main">
+          <form>
+            <fieldset>
+              <legend>
+                <h3>
+                  Welcome to 
+                  <div class="logo">Converter</div>
+                </h3>
+              </legend>
+              <div>
+                <label for="celsius">celsius</label>
+                <input type="number" name="celsius" id="celsius" onkeyup="updateFahrenheit(this.form)"/>
+              </div>
+              <div>
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="number" name="fahrenheit" id="fahrenheit" onkeyup="updateCelsius(this.form)"/>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <footer>
+          <div class="Copyright">Copyright &copy; 2021</div>
+          <div class="maintener">
+            By <a title="Contact us" href="mailto:trigger.courses@gmail.com">Trigger Team</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
