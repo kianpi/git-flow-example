@@ -27,11 +27,11 @@
               </legend>
               <div>
                 <label for="celsius">celsius</label>
-                <input type="number" name="celsius" id="celsius" />
+                <input type="number" name="celsius" id="celsius" onkeyup="updateFahrenheit(this.form)"/>
               </div>
               <div>
                 <label for="fahrenheit">Fahrenheit</label>
-                <input type="number" name="fahrenheit" id="fahrenheit" />
+                <input type="number" name="fahrenheit" id="fahrenheit" onkeyup="updateCelsius(this.form)"/>
               </div>
             </fieldset>
           </form>
@@ -44,5 +44,6 @@
         </footer>
       </div>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
